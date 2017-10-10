@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="全屏滚动" />
+    <meta name="Description" content="" />
+    <title>全屏滚动</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" id="favicon" />
+    <link rel="stylesheet" href="updata.css" type="text/css" />
+    <link rel="stylesheet" href="icon/iconfont.css" type="text/css" />
+    <base target="_blank">
+</head>
+
+<body>
+    <div class="doc">
+        <div class="doc-hd">
+            <a href=""><i class="iconfont icon-lianyinglogo" style="font-size: 40px"></i><div class="logo">全屏滚动</div></a>
+            <ul class="pri-nav">
+                <li><a href="/">1.0.1正式版</a></li>
+                <li class="cur"><a href="updatelog.html">更新日志</a></li>
+                <li><a href="/" target="_blank">下载&gt;</a></li>
+                <li class="arrow" style="left:93px;"></li>
+            </ul>
+        </div>
+        <div class="doc-bd">
+            <div class="update update-1st">
+                <h2><span class="tit">全屏滚动</span><span class="date">2017-06-29</span></h2>
+                <ul>
+                    <li><span class="no">1</span>快速消费：会员在店面消费，系统自动根据会员级别、店面积分折扣设置等折算为积分赠送给会员。并记录消费信息，如会员消费项目、金额等信息</li>
+                    <li><span class="no">2</span>快速充值：系统为用户有充值需求时，可由软件自动识别已付款的订单，识别后自动从软件预付款中扣款，帮助用户充值。可以实现多终端、多时段、多方式为用户快速充值，让用户充值更方便。</li>
+                    <li><span class="no">3</span>充值活动：通过推送活动，顾客可知预存金额，就会赠送储值，以达到吸引顾客充值的效果。</li>
+                    <li><span class="no">4</span>移动支付：支付宝、微信、银联第三方便捷支付接口，会员可轻松完成充值下单购买等操作，全自动操作，方便快捷。</li>
+                    <li><span class="no">5</span>会员营销：促进散客变成会员，同时又激发会员二次消费。可设置消费积分、邀请积分、 推荐积分、新会员积分，同时提供积分抵现金、积分兑换等</li>
+                    <li><span class="no">6</span>会员等级：不同等级的会员享受不同的优惠与折扣，让会员感受差异化的服务。</li>
+                    <li><span class="no">7</span>会员储值：会员储值既能让您快速回笼资金，又能提高客户黏性！提供自动充值以及充值活动等营销手段，助你轻松盈利！</li>
+                    <li><span class="no">8</span>电子优惠券：把传统的优惠券整合到微信会员卡中，支持代金券、积分券、折扣券等。会员随身携带、随时消费，提高顾客消费的几率，提升店面销售额，从而增加店面营业收入</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+    /* 导航栏效果 */
+    $(function() {
+        var $nav = $(".pri-nav"),
+            $lis = $nav.children("li"),
+            $arrow = $lis.filter(".arrow"),
+            arrowDefLeft = $arrow.css("left"),
+            speed = 150,
+            defLiIndex = $lis.index($lis.filter(".cur"));
+
+        $lis.hover(function() {
+            var liIndex = $lis.index(this);
+            $arrow.stop(true, true).animate({ left: (8 + liIndex * 85) + "px" }, speed);
+            $lis.removeClass("cur").eq(liIndex).addClass("cur");
+        });
+        $nav.mouseleave(function() {
+            $arrow.stop(true, true).animate({ left: arrowDefLeft }, speed);
+            $lis.removeClass("cur").eq(defLiIndex).addClass("cur");
+        })
+    })
+    </script>
+</body>
+
+</html>

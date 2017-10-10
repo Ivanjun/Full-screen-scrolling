@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>全屏滚动</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" id="favicon" />
+    <meta name="Keywords" content="全屏滚动" />
+    <meta name="Description" content="全屏滚动" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="icon/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $.fn.fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+            scrollingSpeed: 500,
+            afterLoad: function(anchorLink, index) {
+                if (index == 1) {
+                    $(".back-top").css("display", "none")
+                    $(".btn-right").css("display", "none")
+                } else {
+                    $(".back-top").css("display", "block")
+                    $(".btn-right").css("display", "block")
+                }
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="nav"> 
+        <div class="nav-inner clearfix">
+            <a href="" style="display: inline-block; line-height: 52px;">
+              <i class="iconfont icon-lianyinglogo" style="font-size: 40px"></i>
+              <span style="font-size: 20px; margin-left: 10px; color: #1297DB; text-shadow:1px 0px 1px #999">全屏滚动</span>
+            </a>
+            <ul class="navbar" style="float: right;">
+                <li>
+                    <a href="updatelog.html" target="_blank">更新日志</a>
+                </li>
+                <li>
+                    <a href="/" target="_blank">问题反馈</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section picter">
+        <div class="floor floor1">
+            <div class="fig"></div>
+            <div class="text">
+                <strong></strong>
+                <a href="update/inset.txt" class="block download-btn"></a>
+                <p class="window10">全面兼容Win10、及Win8、Win7、XP等操作系统</p>
+                <div class="install-help">
+                    <a bk="jump_help" href="#page1"><span>安装帮助</span><img src="images/jiantou.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section pay">
+        <div class="floor floor2">
+            <div class="bg"></div>
+            <div class="item item1">
+                <div class="fastTitle"><img src="images/fast.png" alt="快速消费"><span style="margin-left: 5px;">快速消费</span></div>
+                <p>会员在店面消费，系统自动根据会员级别、店面积分折扣设置等折算为积分赠送给会员。并记录消费信息，如会员消费项目、金额等信息</p>
+            </div>
+            <div class="item item2">
+                <div class="fastTitle"><img src="images/zhuanx.png" alt="快速消费"><span style="margin-left: 5px">专项消费</span></div>
+                <p>以服务为性质的消费，没有实物的交换,更好地满足客户的消费需求</p>
+            </div>
+            <div class="item item3">
+                <div class="fastTitle"><img src="images/fastc.png" alt="快速消费"><span style="margin-left: 5px">快速充值</span></div>
+                <p>系统为用户有充值需求时，可由软件自动识别已付款的订单，识别后自动从软件预付款中扣款，帮助用户充值。可以实现多终端、多时段、多方式为用户快速充值，让用户充值更方便。</p>
+            </div>
+            <div class="item item4">
+                <div class="fastTitle"><img src="images/chongz.png" alt="快速消费" width="50" heigth="50"><span style="margin-left: 5px">专项充值</span></div>
+                <p>通过活动的通知顾客可以预存多少金额，就能赠送相应的储值作为回报，以达到吸引顾客充值的效果。</p>
+            </div>
+            <div class="title">
+                <h1>轻松地经营生意从高效收银做起</h1>
+            </div>
+        </div>
+    </div>
+    <div class="section manege">
+        <div class="floor floor3">
+            <div class="text">
+                <h1>打造自主营销平台，把顾客转化为真正属于自己的忠诚会员。</h1>
+                <div class="list">
+                    <h2>我们的努力就是为了让客人爱上这里的服务</h2>
+                    <p>会员等级</p>
+                    <p>会员专属价</p>
+                    <p>会员折扣</p>
+                    <p>会员积分</p>
+                    <p>会员储值</p>
+                </div>
+            </div>
+            <div class="fig">
+                <div class="fig-inner"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section interact">
+        <div class="floor floor4">
+            <div class="lock">
+                <div class="lock-inner"></div>
+            </div>
+            <div class="text">
+                <h1>良好的互动，让顾客变成粉丝</h1>
+                <div class="content">
+                    <h2>粉丝经济时代，你不能没有粉丝</h2>
+                    <p>通过微信会员卡推出多种游戏、活动，规则随时定、支持满减、满赠等多种促销规则，从而吸引会员消费，省事！省钱！省心！节假日统一促销，五一、十一、春节、店庆......岂能错过。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section marketing">
+        <div class="floor floor6">
+            <div class="viewport top"></div>
+            <div class="text">
+                <h1>会员营销促进散客变成会员，同时又激发会员二次消费</h1>
+                <div class="list">
+                    <p>等级、折扣、积分</p>
+                    <p>折扣券、代金券</p>
+                    <p>微信、短信、小票</p>
+                    <p>推荐、分享、返佣</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section money">
+        <div class="floor floor7">
+            <div class="text">
+                <h1>移动互联网的时代，好门店哪能没有移动支付</h1>
+                <div class="content">
+                    <p>支付宝、微信、银联第三方便捷支付接口，会员可轻松完成充值下单购买等操作，全自动操作，方便快捷。</p>
+                </div>
+            </div>
+            <div class="fig"></div>
+        </div>
+        </div>
+        <a class="btn-right" href="http://down.360safe.com/inst.exe"></a>
+        <a href="http://download.lianying.me/#page1" class="back-top"></a>
+    </div>
+</body>
+
+</html>

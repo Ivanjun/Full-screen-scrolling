@@ -1,0 +1,260 @@
+@charset "gb2312";
+
+
+/*common*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 "微软雅黑", sans-serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    background: url(images/body.png) repeat-x #fff;
+    color: #000;
+}
+
+ .doc {
+    background: url(images/bg.gif)
+}
+
+/*float*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+
+.v-a-m {
+    vertical-align: middle;
+}
+
+
+/*font*/
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+/*link*/
+
+a {
+    color: #0092ca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*table*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*layout*/
+
+.doc {
+    background: url(images/doc.jpg) no-repeat 50% 60px;
+    width: 970px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.doc-hd {
+    height: 60px;
+}
+
+
+/*footer*/
+
+.doc-ft {
+    color: #999;
+    font-size: 14px;
+    border-top: 1px solid #e8e8e8;
+    padding: 12px 0;
+    text-align: center;
+}
+
+
+/*nav*/
+
+.pri-nav {
+    float: right;
+    font-size: 13px;
+    position: relative;
+    margin-top: 16px;
+}
+
+.pri-nav li {
+    float: left;
+}
+
+.pri-nav .arrow {
+    width: 69px;
+    height: 31px;
+    background: url(images/pri_nav_arrow.png) no-repeat;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    z-index: 9;
+}
+
+.pri-nav a {
+    color: #444;
+    width: 69px;
+    height: 31px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+    z-index: 99;
+}
+
+.pri-nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pri-nav .cur a {
+    color: #fff;
+}
+
+.update {
+    background: url(images/footer.png) no-repeat 100% 100% #fff;
+    border: 1px solid #cddbe8;
+    margin-bottom: 10px;
+    padding: 35px 0 0 75px;
+    *zoom: 1;
+}
+
+
+/*更新日志*/
+
+.update {
+    background: url(images/update.png) no-repeat 100% 100% #fff;
+    border: 1px solid #cddbe8;
+    margin-bottom: 10px;
+    padding: 35px 0 0 75px;
+    *zoom: 1;
+}
+
+.update-1st {
+    margin-top: 30px;
+    border-color: rgba(26, 90, 150, 0.2);
+}
+
+.update h2 {
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 2px solid #d7d7d7;
+    margin: 0 75px 20px 0;
+    padding-right: 5px;
+}
+
+.update h2 .tit {
+    height: 46px;
+    line-height: 46px;
+    float: left;
+    color: #444;
+    font-weight: normal;
+    font-size: 22px;
+    border-bottom: 2px solid #438bbd;
+    padding: 0 5px;
+    _position: relative;
+    _bottom: -2px;
+}
+
+.update h2 .date {
+    float: right;
+    color: #757575;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.update li {
+    min-height: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.update li .no {
+    background: url(images/no.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    font: normal 16px/30px arial;
+    margin-right: 10px;
+}
+
+.update .more {
+    text-align: right;
+    font-size: 14px;
+    padding: 5px 10px 10px;
+}
+
+.icon-lianyinglogo {
+    float: left;
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+    color: #1297DB;
+}
+
+.logo {
+    font-size: 20px;
+    line-height: 60px;
+    float: left;
+    margin: 0 0 0 13px;
+    color: #000;
+}
